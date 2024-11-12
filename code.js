@@ -21,7 +21,7 @@ function mergesort(array) {
     {
         for (let start = 0; start < array.length; start += 2 * subSize)
         {
-            // Decides the indices for the subarray sizes, defaults to n if too big
+            // Decides the indices for the subarray sizes, defaults to length if too big
             let mid = Math.min(start + subSize, array.length);
             let end = Math.min(start + 2 * subSize, array.length);
 
